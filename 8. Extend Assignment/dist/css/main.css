@@ -1,0 +1,77 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4vh 10vw;
+  height: 57vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main__item1, .main__item3, .main__item2 {
+  position: relative;
+  height: 100%;
+  width: calc(70% - 2.2vw);
+  border: 1px solid gray;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5vh 2.2vw;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main__item1 p, .main__item3 p, .main__item2 p {
+  margin-top: 40px;
+}
+.main__item1 img, .main__item3 img, .main__item2 img {
+  margin-left: 13px;
+}
+.main__item1 button, .main__item3 button, .main__item2 button {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 74px);
+  background: transparent;
+  border: 2px solid orange;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: orange;
+  font-weight: 900;
+}
+.main__item1 button:hover, .main__item3 button:hover, .main__item2 button:hover {
+  background: orange;
+  color: white;
+}
+.main__item2 p {
+  color: red;
+  font-weight: 700;
+}
+.main__item2 button {
+  background-color: black;
+}
+.main__item3 {
+  font-size: 1.5rem;
+}
+.main__item3 p {
+  color: orange;
+}
+.main__item3 button {
+  background-color: green;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    margin: 17vh 2vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__item {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main__item {
+    margin-bottom: 5rem;
+  }
+}/*# sourceMappingURL=main.css.map */

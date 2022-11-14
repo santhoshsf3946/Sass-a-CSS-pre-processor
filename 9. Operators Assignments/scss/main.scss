@@ -1,0 +1,47 @@
+$thin-box-width: 6%;
+
+@function box1Width() {
+    @return $thin-box-width;
+}
+
+@function box2Width() {
+    @return $thin-box-width * 3;
+}
+
+@function box3Width() {
+    @return $thin-box-width * 5;
+}
+
+@function box4Width() {
+    @return $thin-box-width * 8;
+}
+
+.boxes {
+    display: flex;
+    margin: 10% 0;
+    text-align: center;
+}
+
+.box {
+    background-color: gray;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    min-height: 50vh;
+
+    &__box-1 {
+        width: box1Width();
+    }
+
+    &__box-2 {
+        width: box2Width();
+    }   
+
+    &__box-3 {
+        width: box3Width();
+    }   
+
+    &__box-4 {
+        width: box4Width();
+    }   
+}

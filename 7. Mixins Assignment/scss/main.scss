@@ -1,0 +1,33 @@
+@mixin margin-mixin {
+    margin: auto;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 65%;
+    @include margin-mixin;
+    color: rgb(0, 0, 82);
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    @include margin-mixin;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item {
+        margin: 10px;
+
+        i {
+            background-color: rgba(255, 165, 0, 0.15);
+            color: orange;
+            padding: 10px;
+            font-size: 1.5rem;
+            border-radius: 30px;
+        }
+    }
+}

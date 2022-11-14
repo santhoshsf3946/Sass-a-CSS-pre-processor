@@ -1,0 +1,21 @@
+$box-padding-l-r: 2.2vw;
+$box-padding-t-b: 5vh;
+$button-color: orange;
+
+@mixin media-lg {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 650px) {
+        @content;
+    }
+}

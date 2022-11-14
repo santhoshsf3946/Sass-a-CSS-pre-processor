@@ -1,0 +1,13 @@
+@import 'text-color';
+@import 'font-variables';
+
+.main {
+    font-family: $theme-font;
+    margin: 20vh auto;
+    width: 60%;
+
+    &__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0 0 20px;
+    }
+}

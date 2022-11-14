@@ -1,0 +1,76 @@
+@import 'config';
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4vh 10vw;
+    height: calc(62vh - $box-padding-t-b);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    &__item1 {
+        position: relative;
+        height: 100%;
+        width: calc(70% - $box-padding-l-r);
+        border: 1px solid gray;
+        margin: 0 auto;
+        text-align: center;
+        padding: $box-padding-t-b $box-padding-l-r;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        p {
+            margin-top: 40px;
+        }
+        
+        img {
+            margin-left: 13px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 30px;
+            left: calc(50% - 74px);
+            background: transparent;
+            border: 2px solid $button-color;
+            padding: 15px 30px;
+            border-radius: 30px;
+            color: $button-color;
+            font-weight: 900;
+            
+            &:hover {
+                background: $button-color;
+                color: lighten($color: $button-color, $amount: 100%)
+            }
+        }
+    }
+
+    &__item2 {
+        @extend .main__item1;
+        
+        p {
+            color: red;
+            font-weight: 700;
+        }
+
+        button {
+            background-color: black;
+        }
+    }
+
+    &__item3 {
+        @extend .main__item1;
+        font-size: 1.5rem;
+
+        p {
+            color: orange;
+        }
+
+        button {
+            background-color: green;
+        }
+    }
+}
+
+
+@import 'responsive';

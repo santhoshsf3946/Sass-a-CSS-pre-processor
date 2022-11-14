@@ -1,0 +1,25 @@
+@include media-lg {
+    .main {
+        margin: 17vh 2vw;
+    }
+}
+
+@include media-md {
+    .main {    
+        grid-template-columns: repeat(2, 1fr);
+
+        &__item {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+@include media-sm {
+    .main {    
+        grid-template-columns: repeat(1, 1fr);
+
+        &__item {
+            margin-bottom: 5rem;
+        }
+    }
+}
